@@ -6,6 +6,13 @@ tags: jekyll RubyGems
 date: 2016-12-20 14:30:02 +0800
 excerpt: 建立github+markdown+jekyll的过程以及踩的一些坑。
 ---
+* content
+{:toc}
+
+
+
+
+
 最近我决定弄一个博客记录一些东西，并决定使用github+markdown+jekyll 。这一套东西的好处在于:
 1. 我只需要写markdown文件就可以更新blog。
 2. 我非常喜欢git和github，所以把blog放在github我会比较开心。
@@ -17,12 +24,14 @@ excerpt: 建立github+markdown+jekyll的过程以及踩的一些坑。
 然后是[ruby](https://ruby-china.org/wiki/ruby-mirror)。我下载的是2.3.1版本。
 
 之后，可以通过[gem](http://guides.rubygems.org/what-is-a-gem/)指令下载jekyll。但在这之前，受到某个不可描述的影响，国内要上[gem的默认源](http://rubygems.org/)比较困难。所以在用gem下载jekyll之前，我们需要替换gem的源。
+
 ```
 gem sources -a http://gems.ruby-china.org
 gem sources --remove http://rubygems.org/
 gem sources -l
 ```
 确认只有我们新添加的source之后，就可以下载安装jekyll了。
+
 ```
 $ gem install jekyll bundler
 $ jekyll -v
