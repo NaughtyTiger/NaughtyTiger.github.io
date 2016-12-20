@@ -8,11 +8,12 @@ excerpt: 建立github+markdown+jekyll的过程以及踩的一些坑。
 ---
 * content
 {:toc}
+建立github+markdown+jekyll的过程以及踩的一些坑。
 
 
 
 
-
+## 安装环境
 最近我决定弄一个博客记录一些东西，并决定使用github+markdown+jekyll 。这一套东西的好处在于:
 1. 我只需要写markdown文件就可以更新blog。
 2. 我非常喜欢git和github，所以把blog放在github我会比较开心。
@@ -23,6 +24,7 @@ excerpt: 建立github+markdown+jekyll的过程以及踩的一些坑。
 通过[node.js](https://nodejs.org/en/)可以下载安装node.js。我装的是7.2.1版本。
 然后是[ruby](https://ruby-china.org/wiki/ruby-mirror)。我下载的是2.3.1版本。
 
+## 安装jekyll
 之后，可以通过[gem](http://guides.rubygems.org/what-is-a-gem/)指令下载jekyll。但在这之前，受到某个不可描述的影响，国内要上[gem的默认源](http://rubygems.org/)比较困难。所以在用gem下载jekyll之前，我们需要替换gem的源。
 
 ```
